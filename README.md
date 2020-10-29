@@ -5,7 +5,7 @@ It allows to search for phrases with exact and fuzzy search. Results show the di
 
 ![Screenshot](https://i.imgur.com/q7dkSth.png)
 
-This tool does not contain any material from the gothic games. To generate the search database, it uses the locally installed games directories.
+This tool does not contain any material from the gothic games. To generate the search database, it uses the locally installed games.
 
 Installation and usage requires some basic understanding of command line tools.
 
@@ -13,8 +13,8 @@ Installation and usage requires some basic understanding of command line tools.
 
 1. An installed copy of Gothic 1 or 2 (or both) with the corresponding Modkit installed ([Gothic 1 MDK](https://www.worldofgothic.de/dl/download_28.htm) & [Gothic 2 MDK](https://www.worldofgothic.de/dl/download_93.htm)).
 The Modkits install the raw dialog files the tool uses to read the necessary data from.
-If you want to play dialog sound files directly on click, you need to install them via the Modkit too. For Gothic 1 you might need to use [GothicVDFS](https://www.worldofgothic.de/dl/download_27.htm) to extract the sound files (the Gothic 2 Modkit has an explicit option upon installation to do it for you). The tool will expect the sound files inside a "/sound/speech" subdirectory.
-2. [Node.js](https://nodejs.org/en/) es the runtime environment for this tool.
+If you want to play dialog sound files directly on click, you need to install them via the Modkit too. For Gothic 1 you might need to use [GothicVDFS](https://www.worldofgothic.de/dl/download_27.htm) to extract the sound files (the Gothic 2 Modkit has an explicit option upon installation to do it for you). The tool will expect the sound files inside a `/sound/speech` subdirectory inside the Gothic directory.
+2. [Node.js](https://nodejs.org/en/) as the runtime environment for this tool.
 
 
 ## Usage
