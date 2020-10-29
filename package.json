@@ -1,0 +1,35 @@
+{
+  "name": "gothic-quotes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/index.html --public-url .",
+    "generate-example": "ts-node src/generate.ts --copysound --g1=G:/Games/Gothic --g2=\"G:/Games/Gothic II/\" --g3=\"G:/Games/Gothic 3 Modkit/\"",
+    "test": "ts-node src/generate.ts --g1=G:/Games/Gothic/",
+    "dev": "parcel src/index.html",
+    "generate": "ts-node src/generate.ts"
+  },
+  "dependencies": {
+    "copy-text-to-clipboard": "^2.1.1",
+    "globby": "^11.0.0",
+    "leven": "^3.1.0",
+    "lodash.debounce": "^4.0.8",
+    "re.js": "^1.1.0",
+    "wavefile": "^11.0.0",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "parcel-bundler": "^1.12.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
+}

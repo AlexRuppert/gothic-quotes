@@ -1,0 +1,199 @@
+body,
+html {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
+    Helvetica Neue, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgba(58, 59, 71, 0.9);
+  padding-bottom: 2rem;
+}
+html {
+  overflow-y: scroll;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+main {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.serif {
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua,
+    Georgia, serif;
+}
+#search {
+  background: 0 0;
+  color: #666;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+input:focus {
+  outline: 0;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+input:required {
+  outline: 0;
+  box-shadow: none;
+}
+input:focus ~ .bar:before {
+  width: 100%;
+}
+label {
+  font-size: 12px;
+}
+
+.group label {
+  color: #bbb;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+}
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #2196f3;
+  transition: 0.3s ease all;
+  left: 0;
+}
+.group {
+  position: relative;
+  margin: 25px 10px;
+  flex: 1 1 auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 2rem);
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 0.9rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#results {
+  padding: 0.9rem;
+}
+#results > div {
+  user-select: none;
+  position: relative;
+  background-color: #fff;
+  padding: 10px 22px;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#results > div > .gothic {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  font-size: 10px;
+}
+#results > div > .voice {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  font-size: 10px;
+}
+
+#results > div:hover {
+  background-color: #d6edff;
+  cursor: pointer;
+}
+#results > div:active,
+#results > div:active i {
+  background-color: #2196f3;
+  color: #fff;
+}
+#results > div > i {
+  color: #2196f3;
+  font-weight: 500;
+  font-style: normal;
+}
+button {
+  background: 0 0;
+  color: #2196f3;
+  text-transform: capitalize;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+button:active {
+  color: #15609c;
+}
+.flex {
+  display: flex;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  text-decoration: none;
+  padding-top: 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.float:active {
+  background-color: #15609c;
+}
+
+details {
+  color: rgba(58, 59, 71, 0.9);
+  outline: 0;
+  margin: 0 10px;
+}
+
+details input {
+  width: 40px;
+}
+
+summary:focus {
+  outline: 0;
+}
+
+summary {
+  color: #999;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gothic Quotes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="main">
+    <section class="container">
+      <div class="card">
+        <div class="flex">
+          <div class="group">
+            <input type="text" id="search" required spellcheck="false" />
+            <span class="bar"></span>
+            <label for="search">Search</label>
+          </div>
+          <button id="clear">Clear</button>
+
+        </div>
+        <details>
+          <summary>More...</summary>
+          <div class="flex">
+            <div>
+              <label for="copyMode">Copy on Click</label>
+              <select name="copyMode" id="copyMode">
+                <option value="text">Text</option>
+                <option value="filename" selected>Filename</option>
+              </select>
+            </div>
+            <span style="width: 25px;"> </span>
+            <div>
+              <label for="voice">VoiceId G1</label>
+              <input type="text" id="voiceG1" spellcheck="false" />
+            </div>
+            <span style="width: 25px;"> </span>
+            <div>
+              <label for="voice">VoiceId G2</label>
+              <input type="text" id="voiceG2" spellcheck="false" />
+            </div>
+          </div>
+
+        </details>
+      </div>
+      <div id="results"></div>
+    </section>
+    <a href="#main" class="float">
+      <i>⇡</i>
+    </a>
+  </main>
+
+  <script src="index.ts"></script>
+</body>
+
+</html>
